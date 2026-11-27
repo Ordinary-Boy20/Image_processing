@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankit Kumar Portfolio</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1b1b1b; --muted:#5a5a5a; --card:#ffffff; --line:#e2e2de; --accent:#1a4fa0; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#141414; --fg:#eaeaea; --muted:#a8a8a8; --card:#1e1e1e; --line:#2e2e2e; --accent:#7aa7ff; }
+  }
+  :root[data-theme="dark"] { --bg:#141414; --fg:#eaeaea; --muted:#a8a8a8; --card:#1e1e1e; --line:#2e2e2e; --accent:#7aa7ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  main { max-width:1080px; margin:0 auto; padding:32px 16px 64px; }
+  header h1 { margin:0 0 4px; font-size:2rem; }
+  header p { margin:0; color:var(--muted); }
+  header .links a { color:var(--accent); margin-right:14px; text-decoration:none; }
+  nav { margin:20px 0 8px; }
+  nav a { color:var(--accent); margin-right:14px; text-decoration:none; }
+  section { margin-top:40px; }
+  section h2 { font-size:1.4rem; margin:0 0 4px; }
+  .desc { color:var(--muted); margin:0 0 16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .photos { display:grid; gap:2px; background:var(--line); }
+  .photos.n2 { grid-template-columns:1fr 1fr; }
+  .photos img { width:100%; height:240px; object-fit:cover; display:block; }
+  .body { padding:14px 16px 16px; }
+  .body h3 { margin:0 0 6px; font-size:1rem; }
+  .q { margin:0 0 10px; }
+  details summary { cursor:pointer; color:var(--accent); }
+  .a { margin:8px 0 0; font-weight:600; }
+  footer { margin-top:48px; color:var(--muted); font-size:0.9rem; }
+  @media (max-width:520px) { .photos img { height:200px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ankit Kumar</h1>
+    <p>Visual reasoning question writing: sample projects</p>
+    <p class="links">
+      <a href="mailto:ankitkumar08022006@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ankit-kumar-3554aa345">LinkedIn</a>
+      <a href="https://github.com/Ordinary-Boy20">GitHub</a>
+      <a href="https://leetcode.com/u/uwSzCuISjQ/">LeetCode</a>
+    </p>
+    <nav>
+      <a href="#p1">Set 1</a><a href="#p2">Set 2</a><a href="#p3">Set 3</a>
+    </nav>
+  </header>
+  
+    <section id="p1">
+      <h2>Visual Reasoning Question Set 1</h2>
+      <p class="desc">Counting people and reading group photos. Each task has one question and one exact answer.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250208001230.jpg" alt="Task 1 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 1</h3>
+            <p class="q">How many people are in this photo, including the person holding the camera?</p>
+            <details><summary>Show answer</summary><p class="a">8</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250208175116.jpg" alt="Task 2 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 2</h3>
+            <p class="q">How many people are standing in front of the trees?</p>
+            <details><summary>Show answer</summary><p class="a">6</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n2"><img src="images/IMG20250208001012.jpg" alt="Task 3 photo 1" loading="lazy"><img src="images/IMG20250208001542.jpg" alt="Task 3 photo 2" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 3</h3>
+            <p class="q">Counting each photo separately, how many people appear in total across these two photos?</p>
+            <details><summary>Show answer</summary><p class="a">4</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250208001652.jpg" alt="Task 4 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 4</h3>
+            <p class="q">How many people are fully visible in this photo?</p>
+            <details><summary>Show answer</summary><p class="a">3</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250208001355.jpg" alt="Task 5 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 5</h3>
+            <p class="q">What colour is the T-shirt worn by the man on the left?</p>
+            <details><summary>Show answer</summary><p class="a">Black</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250208175116.jpg" alt="Task 6 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 6</h3>
+            <p class="q">Which man in the photo is wearing a white sweater?</p>
+            <details><summary>Show answer</summary><p class="a">The man on the far right</p></details>
+          </div>
+        </article></div>
+    </section>
+    <section id="p2">
+      <h2>Visual Reasoning Question Set 2</h2>
+      <p class="desc">Counting people and reading colours on a trip photo set.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412040423.jpg" alt="Task 1 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 1</h3>
+            <p class="q">How many people are in this photo, including the person taking the selfie?</p>
+            <details><summary>Show answer</summary><p class="a">9</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412044824.jpg" alt="Task 2 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 2</h3>
+            <p class="q">How many people are standing in the group in front of the building?</p>
+            <details><summary>Show answer</summary><p class="a">9</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412050623.jpg" alt="Task 3 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 3</h3>
+            <p class="q">How many people are visible in this photo?</p>
+            <details><summary>Show answer</summary><p class="a">6</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412100442.jpg" alt="Task 4 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 4</h3>
+            <p class="q">What colour is the T-shirt worn by the man standing on the boat?</p>
+            <details><summary>Show answer</summary><p class="a">Dark brown</p></details>
+          </div>
+        </article></div>
+    </section>
+    <section id="p3">
+      <h2>Visual Reasoning Question Set 3</h2>
+      <p class="desc">Reading a watch, counting people and naming colours.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412041049.jpg" alt="Task 1 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 1</h3>
+            <p class="q">What time is shown on the watch?</p>
+            <details><summary>Show answer</summary><p class="a">4:10 AM</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412045000.jpg" alt="Task 2 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 2</h3>
+            <p class="q">How many people are in this group photo, including the person taking the selfie?</p>
+            <details><summary>Show answer</summary><p class="a">9</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412052624.jpg" alt="Task 3 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 3</h3>
+            <p class="q">How many people are fully visible standing in the doorway?</p>
+            <details><summary>Show answer</summary><p class="a">4</p></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photos n1"><img src="images/IMG20250412100740.jpg" alt="Task 4 photo 1" loading="lazy"></div>
+          <div class="body">
+            <h3>Task 4</h3>
+            <p class="q">What colour is the shirt of the man sitting on the boat step?</p>
+            <details><summary>Show answer</summary><p class="a">Yellow</p></details>
+          </div>
+        </article></div>
+    </section>
+  <footer>Each task has one question with one checkable answer. Photos are used with the consent of the people shown and the photographers.</footer>
+</main>
+</body>
+</html>
